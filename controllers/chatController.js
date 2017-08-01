@@ -48,7 +48,7 @@ module.exports.createConversation = function (req, res, next) {
       }
       rdb.save('conversations', conversation)
         .then(function (result) {
-          res.json(result)
+          res.json(conversation)
         })
     })
     .catch(function (err) {
