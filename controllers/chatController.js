@@ -13,15 +13,40 @@ var sessionService = require('../service/session')
 //     })
 // }
 
+/*
+ * Post chat message
+ */
 module.exports.createMsg = function (req, res, next) {
   sessionService.getAuthenticatedUser(req.headers['x-api-token'])
     .then(function (loggedInUser) {
       var msg = {
+        conversationId: req.body.conversation,
         text: req.body.text,
         created: Date.now(),
-        author: loggedInUser.name
+        author: loggedInUser.name  // TODO: Change to id
       }
       rdb.save('messages', msg)
+        .then(function (result) {
+          res.json(msg)
+        })
+    })
+    .catch(function (err) {
+      error.errorResponse(res, err)
+    })
+}
+
+/*
+ * Create new conversation
+ */
+module.exports.createConversation = function (req, res, next) {
+  sessionService.getAuthenticatedUser(req.headers['x-api-token'])
+    .then(function (loggedInUser) {
+      var conversation = {
+        created: Date.now(),
+        creator: loggedInUser.id,
+        participants: [loggedInUser.id]
+      }
+      rdb.save('conversations', conversation)
         .then(function (result) {
           res.json(result)
         })
