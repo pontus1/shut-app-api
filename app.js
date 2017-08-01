@@ -69,19 +69,6 @@ app.use(cors())
 app.use(helmet())
 
 /*
- * Session test (count page views)
- */
-app.get('/', function (req, res) {
-  if (req.session.page_views) {
-    req.session.page_views++
-    res.send('You visited this page ' + req.session.page_views + ' times')
-  } else {
-    req.session.page_views = 1
-    res.send('Welcome to this page for the first time!')
-  }
-})
-
-/*
  * Chat
  */
 app.get('/chat', function (req, res) {
@@ -120,11 +107,6 @@ io.on('connection', function (socket) {
   })
 })
 
-// io.on('new-message', function (msg) {
-//   io.emit('chat message', msg.text)
-// })
-
-
 rdb.liveMessageUpdates(io)
 
 /*
@@ -133,11 +115,3 @@ rdb.liveMessageUpdates(io)
 httpServer.listen(port, host, function () {
   console.log('App is listening on http://%s:%s', host, port)
 })
-
-
-// var server = app.listen(3000, function () {
-//   var host = server.address().address
-//   var port = server.address().port
-//
-//     console.log('App is listening on http://%s:%s', host, port)
-// })
