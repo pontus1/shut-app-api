@@ -20,5 +20,8 @@ TOKEN_SECRET=<secret>
 SERVER_HOST=<server host>
 SERVER_PORT=<port>
 ```
-
+## Run 
+```
+npm run start:dev
+```
 
