@@ -1,12 +1,14 @@
-{
-"author":  "Hasse" ,
-"created": 1501576834257 ,
-"id":  "2a52437a-1acf-451d-a8aa-b6d648c1674a" ,
-"text":  "my name is Hasse"
-},
-{
-"author":  "Frasse" ,
-"created": 1501577759764 ,
-"id":  "fce3a8a0-332c-48d0-aac5-366d871a42a4" ,
-"text":  "...and my name is Frasse"
-}
+[
+  {
+  "author": "Hasse",
+  "created": 1501576834257,
+  "id":  "2a52437a-1acf-451d-a8aa-b6d648c1674a",
+  "text": "my name is Hasse"
+  },
+  {
+  "author": "Frasse",
+  "created": 1501577759764,
+  "id": "fce3a8a0-332c-48d0-aac5-366d871a42a4",
+  "text": "...and my name is Frasse"
+  }
+]
