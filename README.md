@@ -20,6 +20,13 @@ TOKEN_SECRET=<secret>
 SERVER_HOST=<server host>
 SERVER_PORT=<port>
 ```
+
+## Setup database
+```
+npm run db-setup
+```
+This will create a database with all tables and fill them with dummy data.
+
 ## Run 
 
 #### Start database server
