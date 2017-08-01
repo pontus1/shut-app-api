@@ -23,6 +23,8 @@ module.exports.logInUser = function (req, res, next) {
               email: user.email,
               token: token.generate(user)
             }
+            /* Save users id in cookie */
+            req.session.user = user.id
 
             res.json(currentUser)
           } else {
