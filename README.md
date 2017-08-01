@@ -21,6 +21,12 @@ SERVER_HOST=<server host>
 SERVER_PORT=<port>
 ```
 ## Run 
+
+#### Start database server
+```
+rethinkdb
+```
+#### Start server
 ```
 npm run start:dev
 ```
