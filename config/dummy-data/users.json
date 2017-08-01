@@ -1,0 +1,18 @@
+{
+"created": 1501576586609 ,
+"email": hasse@chat.se,
+"id":  "258f0bc2-8624-44e6-8760-51feda5a54d3" ,
+"isActive": true ,
+"isAdmin": true ,
+"name":  "Hasse" ,
+"password":  "$2a$10$pyWR1Qsp0lCBmciRUv/EDuGK6N0iTx259FuL9Z4ZdAyG6p.IU8mjS"
+},
+{
+"created": 1501576638745 ,
+"email": frasse@chat.se,
+"id":  "2691a44a-2101-4333-a491-00ac0ca91ea9" ,
+"isActive": true ,
+"isAdmin": false ,
+"name":  "Frasse" ,
+"password":  "$2a$10$KEZqKQhbyTM6Y9CRJ5112e9ToPJHwp3b6MI5btqno6Niz0rxx7XsO"
+}
