@@ -4,7 +4,7 @@ const r = require('rethinkdb')
 const config = require('./database')
 
 const DATABASE = config.db || 'shut_app'
-const TABLES = ['users', 'messages', 'sessions']
+const TABLES = ['users', 'conversations', 'messages', 'sessions']
 let connection = null
 
 /*
