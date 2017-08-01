@@ -1,0 +1,22 @@
+# LOGS
+npm-debug.log*
+
+
+# ENVIRONMENT VARIABLES
+.env
+
+
+# DEPENDENCY DIRECTORIES
+node_modules
+rethinkdb_data
+
+
+# IDE
+.idea
+
+
+# ROUNTIME DATA
+pids
+*.pid
+*.seed
+*.pid.lock
