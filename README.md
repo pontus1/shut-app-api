@@ -11,6 +11,8 @@ npm i
 ```
 touch .env
 ```
+
+```
 DB_HOST=<hostname>
 DB_PORT=28015
 DB_NAME=<database name>
