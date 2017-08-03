@@ -18,7 +18,7 @@ var chat = require('./routes/chat')
 var app = express()
 var httpServer = http.createServer(app)
 var host = config.host || 'localhost'
-var port = config.port || 3000
+var port = config.port || 3001
 var io = require('socket.io')(httpServer)
 
 /*
