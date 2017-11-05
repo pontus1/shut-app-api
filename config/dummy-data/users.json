@@ -1,18 +1,26 @@
 [
   {
-  "created": 1501576586609,
-  "email": "hasse@chat.se",
-  "id": "258f0bc2-8624-44e6-8760-51feda5a54d3",
-  "isAdmin": true,
-  "name": "Hasse",
-  "password": "$2a$10$pyWR1Qsp0lCBmciRUv/EDuGK6N0iTx259FuL9Z4ZdAyG6p.IU8mjS"
+    "created": 1501576586609,
+    "email": "hasse@chat.se",
+    "id": "258f0bc2-8624-44e6-8760-51feda5a54d3",
+    "isAdmin": true,
+    "name": "Hasse",
+    "password": "$2a$10$pyWR1Qsp0lCBmciRUv/EDuGK6N0iTx259FuL9Z4ZdAyG6p.IU8mjS"
   },
   {
-  "created": 1501576638745,
-  "email": "frasse@chat.se",
-  "id": "2691a44a-2101-4333-a491-00ac0ca91ea9",
-  "isAdmin": false,
-  "name": "Frasse",
-  "password": "$2a$10$KEZqKQhbyTM6Y9CRJ5112e9ToPJHwp3b6MI5btqno6Niz0rxx7XsO"
+    "created": 1501576638745,
+    "email": "frasse@chat.se",
+    "id": "2691a44a-2101-4333-a491-00ac0ca91ea9",
+    "isAdmin": false,
+    "name": "Frasse",
+    "password": "$2a$10$KEZqKQhbyTM6Y9CRJ5112e9ToPJHwp3b6MI5btqno6Niz0rxx7XsO"
+  },
+  {
+    "created": 1509888860482,
+    "email": "lasse@chat.se",
+    "id": "5e3cc139-5039-4884-9423-73084ea0b3d7",
+    "isAdmin": false,
+    "name": "Lasse",
+    "password": "$2a$10$Bkox58QsU8z4NX.6epL0jOUSNQertKdJ0DEOAHd85P2J5TASbJkWq"
   }
 ]
