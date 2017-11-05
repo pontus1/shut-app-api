@@ -9,4 +9,7 @@ router.route('/message')
 router.route('/conversation')
   .post(auth.authorize, controller.createConversation)
 
+router.route('/conversation/:id')
+  .get(auth.authorize, controller.getConversationMessages)
+
 module.exports = router

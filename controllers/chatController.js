@@ -4,15 +4,6 @@ var error = require('../service/errors')
 
 var sessionService = require('../service/session')
 
-// module.exports.createMsg = function (req, res, next) {
-//   var token = req.headers['x-api-token']
-//   session.getAuthenticatedUser(token)
-//     .then(function (result) {
-//       res.json(result.name)
-//       res.end()
-//     })
-// }
-
 /*
  * Post chat message
  */
@@ -20,7 +11,7 @@ module.exports.createMsg = function (req, res, next) {
   sessionService.getAuthenticatedUser(req.headers['x-api-token'])
     .then(function (loggedInUser) {
       var msg = {
-        conversationId: req.body.conversation,
+        conversationId: req.body.conversationId,
         text: req.body.text,
         created: Date.now(),
         author: loggedInUser.name  // TODO: Change to id
@@ -54,4 +45,33 @@ module.exports.createConversation = function (req, res, next) {
     .catch(function (err) {
       error.errorResponse(res, err)
     })
+}
+
+/*
+ * Get all messages
+ */
+module.exports.getAllMessages = function (req, res, next) {
+  // TODO: Make sure user is authorized to se all (admin)
+  rdb.findAll('messages')
+    .then(function (messages) {
+      res.json(messages)
+    })
+    .catch(function (err) {
+      error.errorResponse(res, err)
+    })
+}
+
+/*
+ * Get all messages from conversation
+ */
+module.exports.getConversationMessages = function (req, res, next) {
+    console.log('req: ', req)
+  // TODO: Make sure user is authorized to se conversation (participant of conversation or admin)
+  rdb.findBy('messages', 'conversationId', req.params.id)
+  .then(function (messages) {
+    res.json(messages)
+  })
+  .catch(function (err) {
+    error.errorResponse(res, err)
+  })
 }
