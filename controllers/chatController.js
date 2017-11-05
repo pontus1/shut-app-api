@@ -48,6 +48,23 @@ module.exports.createConversation = function (req, res, next) {
 }
 
 /*
+  Get all conversations specified user is participating in
+ */
+module.exports.getConversationsByLoggedInUser = function (req, res, next) {
+  sessionService.getAuthenticatedUser(req.headers['x-api-token'])
+  .then(function (loggedInUser) {
+    rdb.getConversationsByParticipant(loggedInUser.id)
+    .then(function (conversations) {
+      res.json(conversations)
+    })
+    .catch(function (err) {
+      error.errorResponse(res, err)
+    })
+  })
+}
+
+
+/*
  * Get all messages
  */
 module.exports.getAllMessages = function (req, res, next) {
