@@ -40,4 +40,8 @@ module.exports.logInUser = function (req, res, next) {
     })
 }
 
-// TODO: Logout (remove session/cookie)
+
+module.exports.logOutUser = function (req, res, next) {
+  // TODO: Logout (remove session/cookie)
+  res.json('logging out...')
+}
