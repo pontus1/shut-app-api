@@ -1,8 +1,20 @@
-{
-  "created": 1501590255599,
-  "creator": "258f0bc2-8624-44e6-8760-51feda5a54d3",
-  "id": "fa7d69d3-beed-496b-a6b2-4d11f174cd24",
-  "participants": [
-    "258f0bc2-8624-44e6-8760-51feda5a54d3"
-  ]
-}
+[
+  {
+    "created": 1501590255599,
+    "creator": "258f0bc2-8624-44e6-8760-51feda5a54d3",
+    "id": "fa7d69d3-beed-496b-a6b2-4d11f174cd24",
+    "participants": [
+      "258f0bc2-8624-44e6-8760-51feda5a54d3",
+      "2691a44a-2101-4333-a491-00ac0ca91ea9"
+    ]
+  },
+  {
+    "created": 1509889476914 ,
+    "creator": "5e3cc139-5039-4884-9423-73084ea0b3d7",
+    "id": "d082a585-eaf5-4d49-9753-34b18396ec80" ,
+    "participants": [
+      "5e3cc139-5039-4884-9423-73084ea0b3d7",
+      "258f0bc2-8624-44e6-8760-51feda5a54d3"
+    ]
+  }
+]
